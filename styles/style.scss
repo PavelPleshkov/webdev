@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$mainFont: 'Roboto', sans-serif;
+// $mainColor: #ffc61a;
+
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +11,47 @@
 html,
 body {
     height: 100%;
+    font-family: $mainFont;
 }
 
 .container {
     min-height: 100vh;
     width: 1600px;
+    // max-width: 1600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 1fr auto;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
-.header {
+.topWrapper {
     width: 100%;
-    height: 95px;
-    background-color: red;
+    height: 744px;
+    background-image: url('../assets/img/bg-image.png');
+    background-position: center center;
+    background-size: cover;
+
+    .header {
+        width: 100%;
+        height: 95px;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+
+        &Nav {
+            // display: grid;
+            display: flex;
+            
+            
+
+            &Item {
+                color: #ffffff;
+            }
+        }
+    }
 }
 
 .main {
@@ -30,5 +61,5 @@ body {
 footer {
     width: 100%;
     height: 184px;
-    background-color: rgb(17, 0, 255);
+    background-color: yellow;
 }
