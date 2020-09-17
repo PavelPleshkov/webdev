@@ -14,6 +14,10 @@ body {
     font-family: $mainFont;
 }
 
+body h1 {
+    display: none;
+}
+
 .container {
     min-height: 100vh;
     width: 1600px;
@@ -42,7 +46,7 @@ body {
         align-items: center;
         width: 100%;
         height: 95px;
-        background-color: rgba($color: #ffffff, $alpha: 0.5);
+        // background-color: rgba($color: #ffffff, $alpha: 0.5);
 
         &Nav {
             // display: grid;
@@ -120,7 +124,84 @@ body {
     }
 
     .yourLife {
+        // background-color: rgba($color: red, $alpha: 0.5);
+        height: 100%;
 
+        &Title {
+            margin: 135px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            letter-spacing: 4.5px;
+            text-transform: uppercase;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 75px;
+            color: #ffffff;
+
+            span {
+                display: block;
+                padding-left: 5px;
+            }
+        }
+
+        &Text {
+            margin: 22px auto 0;
+            width: 504px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 140%;
+            /* or 25px */
+            text-align: center;
+            color: #ffffff;
+        }
+
+        &Btn {
+            display: block;
+            margin: 30px auto 0;
+            padding: 15px 47px;
+            background: #00AFDB;
+            width: 90px;
+            height: 16px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            transition: 0.2s;
+
+            &:hover {
+                // transform: scale(1.02   );
+                // box-shadow: 0px 0px 5px 5px #ffffff;
+                background-color: #009CC2;
+            }
+        }
+
+        &Links {
+            margin: 182px auto 0;
+            width: 170px;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            &Item {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                transition: 0.2s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 }
 
