@@ -603,30 +603,29 @@ body h1 {
                 color: #FFFFFF;
                 // background-color: #00AFDB;
 
-                &:after {
-                    content: '';
-                    display: block;
-                    margin-right: 0;
-                    width: 60px;
-                    height: 100%;
-                    background-color: #009CC2;
-                    // background-image: url('/assets/img/downloadBtnApple.png');
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    position: absolute;
-                    top: 0px;
-                    left: 100%;
-                }
+                // &:after {
+                //     content: '';
+                //     display: block;
+                //     margin-right: 0;
+                //     width: 60px;
+                //     height: 100%;
+                //     background-color: #009CC2;
+                //     background-repeat: no-repeat;
+                //     background-position: center center;
+                //     position: absolute;
+                //     top: 0px;
+                //     left: 100%;
+                // }
 
-                &Apple:after {
-                    background-image: url('/assets/img/downloadBtnApple.png');
-                }
+                // &Apple:after {
+                //     background-image: url('/assets/img/downloadBtnApple.png');
+                // }
 
-                &Android:after {
-                    background-image: url('/assets/img/downloadBtnAndroid.png');
-                }
+                // &Android:after {
+                //     background-image: url('/assets/img/downloadBtnAndroid.png');
+                // }
 
-                a {
+                &Link {
                     display: block;
                     width: 100%;
                     height: 100%;
@@ -635,8 +634,41 @@ body h1 {
                     background-color: #00AFDB;
                     transition: 0.2s;
 
+                    &:after {
+                        content: '';
+                        display: block;
+                        // margin-right: 0;
+                        width: 60px;
+                        height: 100%;
+                        background-color: #009CC2;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        position: absolute;
+                        top: 0px;
+                        left: 100%;
+                        transition: 0.5s;
+                    }
+
                     &:hover {
                         background-color: #009CC2;
+                        padding-left: 25px;
+                        padding-right: 9px;
+                        transition: 0.5s;
+
+                        &:after {
+                            // transform: rotate(360deg);
+                            // transition: 0.5s;
+                            background-position: 30% center;
+                            
+                        }
+                    }
+
+                    &Apple:after {
+                        background-image: url('/assets/img/downloadBtnApple.png');
+                    }
+
+                    &Android:after {
+                        background-image: url('/assets/img/downloadBtnAndroid.png');
                     }
                 }
             }

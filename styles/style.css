@@ -638,29 +638,7 @@ body h1 {
   color: #FFFFFF;
 }
 
-.main .downloadBtnsItem:after {
-  content: '';
-  display: block;
-  margin-right: 0;
-  width: 60px;
-  height: 100%;
-  background-color: #009CC2;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: absolute;
-  top: 0px;
-  left: 100%;
-}
-
-.main .downloadBtnsItemApple:after {
-  background-image: url("/assets/img/downloadBtnApple.png");
-}
-
-.main .downloadBtnsItemAndroid:after {
-  background-image: url("/assets/img/downloadBtnAndroid.png");
-}
-
-.main .downloadBtnsItem a {
+.main .downloadBtnsItemLink {
   display: block;
   width: 100%;
   height: 100%;
@@ -672,8 +650,39 @@ body h1 {
   transition: 0.2s;
 }
 
-.main .downloadBtnsItem a:hover {
+.main .downloadBtnsItemLink:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 100%;
   background-color: #009CC2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .downloadBtnsItemLink:hover {
+  background-color: #009CC2;
+  padding-left: 25px;
+  padding-right: 9px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main .downloadBtnsItemLink:hover:after {
+  background-position: 30% center;
+}
+
+.main .downloadBtnsItemLinkApple:after {
+  background-image: url("/assets/img/downloadBtnApple.png");
+}
+
+.main .downloadBtnsItemLinkAndroid:after {
+  background-image: url("/assets/img/downloadBtnAndroid.png");
 }
 
 footer {
