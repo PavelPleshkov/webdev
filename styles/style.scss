@@ -167,8 +167,9 @@ body h1 {
             margin: 30px auto 0;
             padding: 15px 47px;
             background: #00AFDB;
-            width: 90px;
-            height: 16px;
+            width: 184px;
+            height: 46px;
+            box-sizing: border-box;
             font-family: $mainFont;
             font-style: normal;
             font-weight: bold;
@@ -242,7 +243,7 @@ body h1 {
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
-                line-height: 20px;
+                line-height: 21px;
                 color: #4E4E4E;
                 text-align: left;
             }
@@ -251,8 +252,9 @@ body h1 {
                 display: block;
                 padding: 15px 47px;
                 background: #00AFDB;
-                width: 90px;
-                height: 16px;
+                width: 184px;
+                height: 46px;
+                box-sizing: border-box;
                 font-family: $mainFont;
                 font-style: normal;
                 font-weight: bold;
@@ -300,7 +302,7 @@ body h1 {
             align-items: center;
             
             &Image {
-
+                display: block;
             }
 
             &Title {
@@ -330,7 +332,6 @@ body h1 {
         &Slider {
             // height: 100%;
             height: 284px;
-            background-color: #fff;
 
             &Nav {
                 padding-bottom: 20px;
@@ -412,6 +413,230 @@ body h1 {
 
                     &:nth-child(3) {
                         background-image: url('/assets/img/communitySliderImage3.png');
+                    }
+                }
+            }
+        }
+    }
+
+    .implement {
+        padding: 120px 378px 140px 269px;
+        display: grid;
+        grid-template-columns: repeat(2, 407px);
+        grid-template-rows: 582px;
+        column-gap: 139px;
+        background-color: #ffffff;
+
+
+        &Image {
+            display: block;
+        }
+
+        &Info {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            margin-top: 200px;
+
+            &Title {
+                font-family: $mainFont;
+                margin-bottom: 20px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #373737;
+            }
+
+            &Text {
+                margin-bottom: 29px;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 21px;
+                color: #4E4E4E;
+            }
+
+            &Btn {
+                display: block;
+                padding: 15px 47px;
+                background: #00AFDB;
+                width: 180px;
+                height: 46px;
+                box-sizing: border-box;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #ffffff;
+                transition: 0.2s;
+
+                &:hover {
+                    // transform: scale(1.02   );
+                    // box-shadow: 0px 0px 5px 5px #ffffff;
+                    background-color: #009CC2;
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        width: 100%;
+        height: 598px;
+        padding: 218px 597px 277px;
+        box-sizing: border-box;
+        background-image: url('/assets/img/subscribeBcgImage.png');
+
+        &Title {
+            margin-bottom: 30px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        &Form {
+            display: flex;
+            width: 100%;
+            height: 46px;
+            box-sizing: border-box;
+
+            &Field {
+                display: block;
+                width: 340px;
+                height: 100%;
+                box-sizing: border-box;
+                outline: none;
+                border: none;
+                padding: 14px 24px 12px;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: #373737;
+            }
+
+            &Btn {
+                display: block;
+                width: 66px;
+                height: 100%;
+                border: none;
+                box-sizing: border-box;
+                background-color: #00AFDB;
+                background-image: url('/assets/img/subscribeBtnImage.png');
+                background-position: center center;
+                background-repeat: no-repeat;
+                transition: 0.2s;
+
+                &:hover {
+                    background-size: 1.5em;
+                    background-color: #009CC2;
+                }
+            }
+        }
+    }
+
+    .download {
+        height: 468px;
+        background-color: #F5F6F7;
+        padding: 122px 558px 180px;
+        box-sizing: border-box;
+
+        &Title {
+            margin-bottom: 20px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #373737;
+        }
+
+        &Text {
+            margin-bottom: 30px;
+            font-family: $mainFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #4E4E4E;
+        }
+
+        &Btns {
+            margin: 0 auto;
+            width: 406px;
+            display: grid;
+            grid-template-columns: repeat(2, 188px);
+            grid-template-rows: 50px;
+            column-gap: 30px;
+
+            &Item {
+                width: 128px;
+                // float: left;
+                // margin-right: 60px;
+                position: relative;
+                display: block;
+                // padding: 17px;
+                box-sizing: border-box;
+                font-family: $mainFont;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                // background-color: #00AFDB;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    margin-right: 0;
+                    width: 60px;
+                    height: 100%;
+                    background-color: #009CC2;
+                    // background-image: url('/assets/img/downloadBtnApple.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    position: absolute;
+                    top: 0px;
+                    left: 100%;
+                }
+
+                &Apple:after {
+                    background-image: url('/assets/img/downloadBtnApple.png');
+                }
+
+                &Android:after {
+                    background-image: url('/assets/img/downloadBtnAndroid.png');
+                }
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 17px;
+                    box-sizing: border-box;
+                    background-color: #00AFDB;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: #009CC2;
                     }
                 }
             }

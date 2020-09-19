@@ -166,8 +166,10 @@ body h1 {
   margin: 30px auto 0;
   padding: 15px 47px;
   background: #00AFDB;
-  width: 90px;
-  height: 16px;
+  width: 184px;
+  height: 46px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -252,7 +254,7 @@ body h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #4E4E4E;
   text-align: left;
 }
@@ -261,8 +263,10 @@ body h1 {
   display: block;
   padding: 15px 47px;
   background: #00AFDB;
-  width: 90px;
-  height: 16px;
+  width: 184px;
+  height: 46px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -322,6 +326,10 @@ body h1 {
           align-items: center;
 }
 
+.main .communityInfoImage {
+  display: block;
+}
+
 .main .communityInfoTitle {
   padding: 20px 0 11px 3px;
   font-family: "Roboto", sans-serif;
@@ -347,7 +355,6 @@ body h1 {
 
 .main .communitySlider {
   height: 284px;
-  background-color: #fff;
 }
 
 .main .communitySliderNav {
@@ -433,6 +440,240 @@ body h1 {
 
 .main .communitySliderImagesItem:nth-child(3) {
   background-image: url("/assets/img/communitySliderImage3.png");
+}
+
+.main .implement {
+  padding: 120px 378px 140px 269px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (407px)[2];
+      grid-template-columns: repeat(2, 407px);
+  -ms-grid-rows: 582px;
+      grid-template-rows: 582px;
+  -webkit-column-gap: 139px;
+          column-gap: 139px;
+  background-color: #ffffff;
+}
+
+.main .implementImage {
+  display: block;
+}
+
+.main .implementInfo {
+  margin-top: 200px;
+}
+
+.main .implementInfoTitle {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.main .implementInfoText {
+  margin-bottom: 29px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4E4E4E;
+}
+
+.main .implementInfoBtn {
+  display: block;
+  padding: 15px 47px;
+  background: #00AFDB;
+  width: 180px;
+  height: 46px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.main .implementInfoBtn:hover {
+  background-color: #009CC2;
+}
+
+.main .subscribe {
+  width: 100%;
+  height: 598px;
+  padding: 218px 597px 277px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("/assets/img/subscribeBcgImage.png");
+}
+
+.main .subscribeTitle {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main .subscribeForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 46px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .subscribeFormField {
+  display: block;
+  width: 340px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 14px 24px 12px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #373737;
+}
+
+.main .subscribeFormBtn {
+  display: block;
+  width: 66px;
+  height: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #00AFDB;
+  background-image: url("/assets/img/subscribeBtnImage.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.main .subscribeFormBtn:hover {
+  background-size: 1.5em;
+  background-color: #009CC2;
+}
+
+.main .download {
+  height: 468px;
+  background-color: #F5F6F7;
+  padding: 122px 558px 180px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .downloadTitle {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #373737;
+}
+
+.main .downloadText {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #4E4E4E;
+}
+
+.main .downloadBtns {
+  margin: 0 auto;
+  width: 406px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (188px)[2];
+      grid-template-columns: repeat(2, 188px);
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.main .downloadBtnsItem {
+  width: 128px;
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main .downloadBtnsItem:after {
+  content: '';
+  display: block;
+  margin-right: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #009CC2;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+}
+
+.main .downloadBtnsItemApple:after {
+  background-image: url("/assets/img/downloadBtnApple.png");
+}
+
+.main .downloadBtnsItemAndroid:after {
+  background-image: url("/assets/img/downloadBtnAndroid.png");
+}
+
+.main .downloadBtnsItem a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #00AFDB;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.main .downloadBtnsItem a:hover {
+  background-color: #009CC2;
 }
 
 footer {
