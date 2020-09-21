@@ -55,27 +55,41 @@ body h1 {
 
 .topWrapper .headerNav {
   width: 100%;
+  height: 100%;
   padding-right: 12px;
   padding-top: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .topWrapper .headerNavList {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 582px;
-  margin: 0 auto;
 }
 
 .topWrapper .headerNavItem {
   display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -96,6 +110,16 @@ body h1 {
   color: #ffffff;
 }
 
+.topWrapper .headerNavItem:nth-child(-n+2) {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.topWrapper .headerNavItem:nth-last-child(-n+2) {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
 .topWrapper .headerNavItemActive {
   font-weight: 500;
   border-bottom: 1px solid #ffffff;
@@ -108,6 +132,9 @@ body h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-self: center;
+  padding-top: 2px;
+  padding-left: 13px;
 }
 
 .topWrapper .headerNavLogo:hover {
@@ -155,7 +182,6 @@ body h1 {
   font-weight: normal;
   font-size: 18px;
   line-height: 140%;
-  /* or 25px */
   text-align: center;
   color: #ffffff;
 }
@@ -215,7 +241,7 @@ body h1 {
 
 .main .rappresent {
   height: 842px;
-  padding: 120px 268px 140px;
+  padding: 120px 269px 140px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -ms-grid;
@@ -230,12 +256,12 @@ body h1 {
 }
 
 .main .rappresentInfo {
-  padding-top: 174px;
+  padding-top: 175px;
 }
 
 .main .rappresentInfoTitle {
-  padding-right: 39px;
-  padding-bottom: 21px;
+  padding-right: 38px;
+  padding-bottom: 19px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -285,7 +311,7 @@ body h1 {
   width: 407px;
   height: 582px;
   margin-right: 2px;
-  background-image: url(../assets/img/rappresentImage.png);
+  background-image: url("../assets/img/rappresentImage.png");
   background-position: center center;
   background-size: cover;
 }
@@ -374,7 +400,7 @@ body h1 {
 }
 
 .main .communitySliderNavText {
-  padding: 0 12px 0;
+  padding: 0 10px 0;
 }
 
 .main .communitySliderNavLeft, .main .communitySliderNavRight {
@@ -395,9 +421,7 @@ body h1 {
 }
 
 .main .communitySliderNavLeft:hover, .main .communitySliderNavRight:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: #000000;
+  opacity: .5;
 }
 
 .main .communitySliderNavLeft:before {
@@ -509,8 +533,8 @@ body h1 {
 
 .main .subscribe {
   width: 100%;
-  height: 598px;
-  padding: 218px 597px 277px;
+  height: 524px;
+  padding: 201px 597px 220px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: url("/assets/img/subscribeBcgImage.png");
@@ -547,7 +571,7 @@ body h1 {
           box-sizing: border-box;
   outline: none;
   border: none;
-  padding: 14px 24px 12px;
+  padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -572,12 +596,11 @@ body h1 {
 }
 
 .main .subscribeFormBtn:hover {
-  background-size: 1.5em;
   background-color: #009CC2;
 }
 
 .main .download {
-  height: 468px;
+  height: 464px;
   background-color: #F5F6F7;
   padding: 122px 558px 180px;
   -webkit-box-sizing: border-box;
@@ -610,19 +633,19 @@ body h1 {
 
 .main .downloadBtns {
   margin: 0 auto;
-  width: 406px;
+  width: 402px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (188px)[2];
-      grid-template-columns: repeat(2, 188px);
-  -ms-grid-rows: 50px;
-      grid-template-rows: 50px;
+  -ms-grid-columns: (186px)[2];
+      grid-template-columns: repeat(2, 186px);
+  -ms-grid-rows: 46px;
+      grid-template-rows: 46px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
 }
 
 .main .downloadBtnsItem {
-  width: 128px;
+  width: 127px;
   position: relative;
   display: block;
   -webkit-box-sizing: border-box;
@@ -640,7 +663,7 @@ body h1 {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 17px;
+  padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #00AFDB;
@@ -667,7 +690,7 @@ body h1 {
 .main .downloadBtnsItemLink:hover {
   background-color: #009CC2;
   padding-left: 25px;
-  padding-right: 9px;
+  padding-right: 7px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
