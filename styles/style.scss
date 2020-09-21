@@ -60,7 +60,7 @@ body h1 {
             &List {
                 list-style: none;
                 display: grid;
-                grid-template-columns: repeat(5, 1fr);
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 grid-template-rows: 100%;
                 align-items: center;
                 width: 582px;
@@ -206,7 +206,7 @@ body h1 {
         padding: 120px 269px 140px;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: repeat(2, 407px);
+        grid-template-columns: 407px 407px;
         grid-template-rows: 100%;
         column-gap: 248px;
         background-color: #ffffff;
@@ -379,7 +379,7 @@ body h1 {
                 width: 1281px;
                 display: grid;
                 grid-template-rows: 244px;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: 1fr 1fr 1fr;
                 column-gap: 30px;
 
                 &Item {
@@ -406,7 +406,7 @@ body h1 {
     .implement {
         padding: 120px 378px 140px 269px;
         display: grid;
-        grid-template-columns: repeat(2, 407px);
+        grid-template-columns: 407px 407px;
         grid-template-rows: 582px;
         column-gap: 139px;
         background-color: #ffffff;
@@ -563,7 +563,7 @@ body h1 {
             margin: 0 auto;
             width: 402px;
             display: grid;
-            grid-template-columns: repeat(2, 186px);
+            grid-template-columns: 186px 186px;
             grid-template-rows: 46px;
             column-gap: 30px;
 
@@ -636,7 +636,7 @@ body h1 {
     box-sizing: border-box;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
 
     background-color: #000000;
