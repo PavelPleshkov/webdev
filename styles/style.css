@@ -454,15 +454,15 @@ body h1 {
 }
 
 .main .communitySliderImagesItem:nth-child(1) {
-  background-image: url("/assets/img/communitySliderImage1.png");
+  background-image: url("../assets/img/communitySliderImage1.png");
 }
 
 .main .communitySliderImagesItem:nth-child(2) {
-  background-image: url("/assets/img/communitySliderImage2.png");
+  background-image: url("../assets/img/communitySliderImage2.png");
 }
 
 .main .communitySliderImagesItem:nth-child(3) {
-  background-image: url("/assets/img/communitySliderImage3.png");
+  background-image: url("../assets/img/communitySliderImage3.png");
 }
 
 .main .implement {
@@ -537,7 +537,7 @@ body h1 {
   padding: 201px 597px 220px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url("/assets/img/subscribeBcgImage.png");
+  background-image: url("../assets/img/subscribeBcgImage.png");
 }
 
 .main .subscribeTitle {
@@ -588,7 +588,7 @@ body h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #00AFDB;
-  background-image: url("/assets/img/subscribeBtnImage.png");
+  background-image: url("../assets/img/subscribeBtnImage.png");
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-transition: 0.2s;
@@ -700,11 +700,11 @@ body h1 {
 }
 
 .main .downloadBtnsItemLinkApple:after {
-  background-image: url("/assets/img/downloadBtnApple.png");
+  background-image: url("../assets/img/downloadBtnApple.png");
 }
 
 .main .downloadBtnsItemLinkAndroid:after {
-  background-image: url("/assets/img/downloadBtnAndroid.png");
+  background-image: url("../assets/img/downloadBtnAndroid.png");
 }
 
 .footer {
